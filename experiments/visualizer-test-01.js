@@ -1,4 +1,4 @@
-var SDL = require('../sdl');
+var SDL = require('../lib/sdl');
 console.dir(SDL);
 
 var ic = 0;
@@ -27,8 +27,8 @@ setInterval(function () {
 	cr = Math.sin (1);
   cr = Math.sin (Math.PI);
 
-  cr = Math.sin (ic) * 255;
-	cg = Math.cos (ic) * 255;
+  cr = Math.sin (ic * Math.PI/2) * 255;
+	cg = Math.cos (ic * Math.PI) * 255;
  	cb = Math.tan (ic) * 255;
   cr = 0;
 
